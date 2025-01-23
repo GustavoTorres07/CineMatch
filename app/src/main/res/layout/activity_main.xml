@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Barra superior con el título "Peliculas recomendadas de la semana" -->
+    <LinearLayout
+        android:id="@+id/barraSuperior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="#FF5722"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"> <!-- Centrado horizontalmente -->
+
+    <!-- Cuadro de texto con el título centrado en la barra -->
+    <TextView
+        android:id="@+id/tituloBarra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/peliculas_recomendadas_de_la_semana"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+</LinearLayout>
+
+    <!-- ProgressBar para indicar carga -->
+<ProgressBar
+android:id="@+id/progressBar"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_centerInParent="true"
+android:visibility="gone" />
+
+    <!-- RecyclerView para mostrar la lista de películas -->
+<androidx.recyclerview.widget.RecyclerView
+android:id="@+id/recyclerViewPeliculas"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:clipToPadding="false"
+android:scrollbars="vertical"
+android:layout_below="@id/barraSuperior" /> <!-- Colocar el RecyclerView debajo de la barra superior -->
+
+    </RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CineMatch</string>
+    <string name="fecha_desconocida">Desconocido</string>
+    <string name="cinemamatch">CinemaMatch</string>
+    <string name="ver_recomendaciones">Ver Recomendaciones</string>
+    <string name="disfruta_de_las_mejores_recomendaciones">Disfruta de las mejores recomendaciones</string>
+    <string name="puntuacion">Puntuación</string>
+    <string name="titulo_de_la_pelicula">Título de la película</string>
+    <string name="fecha_de_estreno">Fecha de estreno</string>
+    <string name="todo">TODO</string>
+    <string name="peliculas_recomendadas_de_la_semana">Películas recomendadas de la semana</string>
+    <string name="descripci_n">Descripción</string>
+
+</resources>

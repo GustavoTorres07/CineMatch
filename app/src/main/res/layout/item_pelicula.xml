@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <!-- Imagen de la película -->
+        <ImageView
+            android:id="@+id/imgPoster"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <!-- Título de la película -->
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imgPoster"
+            android:layout_alignParentTop="true"
+            android:text="@string/titulo_de_la_pelicula"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingStart="8dp" />
+
+        <!-- Fecha de estreno -->
+        <TextView
+            android:id="@+id/txtFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTitulo"
+            android:layout_toEndOf="@id/imgPoster"
+            android:text="@string/fecha_de_estreno"
+            android:textSize="14sp"
+            android:paddingStart="8dp" />
+
+        <!-- Puntuación -->
+        <TextView
+            android:id="@+id/txtPuntuacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtFecha"
+            android:layout_toEndOf="@id/imgPoster"
+            android:text="@string/puntuacion"
+            android:textSize="14sp"
+            android:paddingStart="8dp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
