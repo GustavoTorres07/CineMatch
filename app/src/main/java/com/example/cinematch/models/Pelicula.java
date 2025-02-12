@@ -28,7 +28,7 @@ public class Pelicula implements Serializable {
     private final String descripcion;
 
     // Constructor con parámetros
-    public Pelicula(int id, String titulo, String rutaPoster, String fechaEstreno, double popularidad, double promedioVotos, String descripcion, List<String> genero) {
+    public Pelicula(int id, String titulo, String rutaPoster, String fechaEstreno, double popularidad, double promedioVotos, String descripcion) {
         this.id = id;
         this.titulo = titulo;
         this.rutaPoster = rutaPoster;
@@ -36,6 +36,7 @@ public class Pelicula implements Serializable {
         this.promedioVotos = promedioVotos;
         this.popularidad = popularidad;
         this.descripcion = descripcion;
+
     }
 
     // Getters
@@ -62,5 +63,6 @@ public class Pelicula implements Serializable {
     public String getDescripcion() {
         return descripcion;
     }
+
 
 }

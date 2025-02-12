@@ -15,7 +15,7 @@ public interface ApiService {
     Call<PeliculaResponse> obtenerPeliculasTendencia (
             @Query("api_key") String apiKey,   // Clave de API
             @Query("language") String language, // Idioma de la respuesta
-            @Query("time_windows") String timeWindow
+            @Query("time_window") String timeWindow
     );
 
 

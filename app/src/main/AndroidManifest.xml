@@ -30,7 +30,9 @@
             android:name=".MainActivity"
             android:exported="true">
         </activity>
-        <activity android:name=".DetallePeliculaActivity">
+        <activity android:name=".DetallePeliculaActivity"
+            android:parentActivityName=".MainActivity">
+
             <!-- Esta parte es opcional si no necesitas un <intent-filter> -->
         </activity>
     </application>

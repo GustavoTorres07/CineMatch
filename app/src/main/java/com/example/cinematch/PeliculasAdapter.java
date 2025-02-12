@@ -1,7 +1,6 @@
 package com.example.cinematch;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -63,8 +62,6 @@ public class PeliculasAdapter extends RecyclerView.Adapter<PeliculasAdapter.Peli
                 holder.txtFecha.setText(context.getString(R.string.fecha_desconocida));
             }
         } catch (Exception e) {
-            // Usar Log.e para registrar el error de manera robusta
-            Log.e("PeliculasAdapter", "Error al parsear la fecha de la película: " + pelicula.getTitulo(), e);
             // Si hubo un error en el parseo, usar recurso de cadena
             holder.txtFecha.setText(context.getString(R.string.fecha_desconocida));
         }

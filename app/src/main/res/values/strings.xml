@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">CineMatch</string>
     <string name="fecha_desconocida">Desconocido</string>
-    <string name="cinemamatch">CinemaMatch</string>
+    <string name="cinemamatch">CineMatch</string>
     <string name="ver_recomendaciones">Ver Recomendaciones</string>
     <string name="disfruta_de_las_mejores_recomendaciones">Disfruta de las mejores recomendaciones</string>
     <string name="puntuacion">Puntuación</string>
